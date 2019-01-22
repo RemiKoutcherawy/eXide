@@ -32,7 +32,7 @@ eXide.util.Preferences = (function () {
 		showPrintMargin: true,
 		showHScroll: false,
         indent: -1,
-        indentSize: 4,
+        indentSize: 2,
         softWrap: -1,
         emmet: false
 	};
@@ -46,8 +46,8 @@ eXide.util.Preferences = (function () {
         $("select, input", container).change(function() {
             $this.updatePreferences();
         });
-        
-        $("#preferences-dialog").dialog({
+
+        container.dialog({
             appendTo: "#layout-container",
     		title: "Preferences",
 			modal: false,
