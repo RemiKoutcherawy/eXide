@@ -36,7 +36,7 @@ eXide.util.Popup = (function () {
     var selection = null;
     var onSelect = function() { };
     var filter = "";
-    var keyDown = false;
+    var keydown = false;
     
     function init(div, editor) {
         container = $(div);
